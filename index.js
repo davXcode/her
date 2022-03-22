@@ -16,7 +16,7 @@ db.connect(function (err, _, done) {
 });
 
 const app = express();
-const PORT = 8888;
+const PORT = process.env.PORT || 8888;
 
 // Boolean => true/false
 const isLogin = true;//
